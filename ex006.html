@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interruptores</title>
+    <link rel="icon" href="imag/imagem_2021-12-21_152630.png">
+    <style>
+        
+        
+        div#area1 {
+            background:red;   
+            background-color:red;
+            border-radius:200px;
+            border:1px solid #000000;
+            display:block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            font-weight:bold;
+            padding:6px 12px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #5b8a3c;
+            margin-right: 1000px;
+            margin-left: 1000px;
+            margin-top: 350px;
+            width: auto;
+            text-align: center;
+        }
+        div#area2 {
+            
+	        background:red;
+	        background-color:red;
+	        border-radius:200px;
+            border:1px solid #000000;
+            display:block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            font-weight:bold;
+            padding:6px 12px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #5b8a3c;
+            margin-right: 1000px;
+            margin-left:1000px;
+            margin-top: 200px;
+            width: auto;
+            text-align: center;
+        }
+        div#area3 {
+            
+	        background:gred;
+	        background-color:red;
+	        border-radius:200px;
+            border:1px solid #000000;
+            display:block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:20px;
+            font-weight:bold;
+            padding:6px 12px;
+            text-decoration:none;
+            text-shadow:0px 1px 0px #5b8a3c;
+            margin-right:  1000px;
+            margin-left:  1000px;
+            margin-top: 200px;
+            width: auto;
+            text-align: center;
+        }
+        
+    </style>
+   
+</head>
+<body>
+    <div id="area1" onclick="clicar()">
+        <p>Ventilador</p>
+        
+    </div>
+    
+    <div id="area2" onclick="clicar2()">
+        <img src="imag/luzOff.png" height="58px" width="61px">
+    </div>
+    <div id="area3" onclick="clicar3()">
+        <p>Botão 3</p>
+    </div>
+        
+    <script>
+            
+        var count = 1;
+        var count2 = 1;
+        var count3 = 1;
+        var fotoLuzOn = '<img src="imag/luzOn.png" height="58px" width="61px">';
+        var fotoLuzOff = '<img src="imag/luzOff.png" height="58px" width="61px">';
+            function clicar (){
+                if(count == 1){
+                    document.getElementById("area1").style.background = "green";
+                    
+                    count = 0;
+                    
+                }else{
+                    document.getElementById("area1").style.background = "red";
+                    
+                    count = 1;
+                }
+                
+            }
+            
+            
+            function clicar2 (){
+                if(count2 == 1){
+                    document.getElementById("area2").style.background = "green";
+                    document.getElementById("area2").innerHTML = fotoLuzOn;
+                    count2 = 0;
+                }else{
+                    document.getElementById("area2").style.background = "red";
+                    document.getElementById("area2").innerHTML = fotoLuzOff;
+                    count2 = 1;
+                    
+                }
+            }
+            
+
+            function clicar3 (){
+                if(count3 == 1){
+                    document.getElementById("area3").style.background = "green";
+
+                    count3 = 0;
+                }else{
+                    document.getElementById("area3").style.background = "red";
+
+                    count3 = 1;
+                }
+                
+            }
+            
+
+    </script>
+</body>
+</html>
